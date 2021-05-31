@@ -1,7 +1,19 @@
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
 
 import { Home } from './screens/Home'
 
 export function Routes() {
-  return <Home />;
+  const { Screen, Navigator } = createStackNavigator()
+
+  return (
+    <NavigationContainer>
+      <Navigator screenOptions={{
+        headerShown: false,
+      }}>
+        <Screen name='Home' component={Home}/>
+      </Navigator>
+    </NavigationContainer>
+  )
 }
