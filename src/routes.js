@@ -1,6 +1,7 @@
 import React from 'react';
-import { View } from 'react-native';
+
+import { Home } from './screens/Home'
 
 export function Routes() {
-  return <View />;
+  return <Home />;
 }
