@@ -9,7 +9,7 @@ import colors from '../../styles/colors';
 export const Container = styled.View`
   flex: 1;
   background: ${colors.light_gray};
-  padding-top: ${getStatusBarHeight()}px;
+  /* padding-top: ${getStatusBarHeight()}px; */
 `
 
 export const Content = styled.View`

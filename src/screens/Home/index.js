@@ -6,6 +6,8 @@ import {
   Map
 } from './styles';
 
+import MapIcon from '../../assets/mapMarker64.png'
+
 export function Home() {
 
   const markers = [
@@ -43,6 +45,7 @@ export function Home() {
               coordinate={item.coordinate}
               title={item.title}
               description={item.description}
+              image={MapIcon}
             />
           ))}
 
