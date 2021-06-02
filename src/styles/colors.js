@@ -6,4 +6,5 @@ export default {
   gray: '#d3d3d3', 
   dark_gray: '#161a1d', 
   black: '#0b090a', 
+  yellow: '#FFCF0E',
 }

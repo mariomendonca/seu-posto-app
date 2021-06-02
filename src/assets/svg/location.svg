@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.088" height="51.096" viewBox="0 0 47.088 51.096">
+  <defs>
+    <filter id="Caminho_81" x="0" y="0" width="47.088" height="51.096" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#161a1d" flood-opacity="0.588"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="location" transform="translate(-22 4)">
+    <g id="Grupo_48" data-name="Grupo 48" transform="translate(31)">
+      <g id="Grupo_47" data-name="Grupo 47">
+        <g transform="matrix(1, 0, 0, 1, -9, -4)" filter="url(#Caminho_81)">
+          <path id="Caminho_81-2" data-name="Caminho 81" d="M51.069,21.867c3.522-5.526,3.079-4.837,3.181-4.981a10.586,10.586,0,0,0,1.96-6.156,10.666,10.666,0,1,0-19.315,6.234l3.124,4.9C36.678,22.38,31,23.91,31,27.278c0,1.228.8,2.978,4.619,4.341A30.6,30.6,0,0,0,45.544,33.1c6.983,0,14.544-1.97,14.544-5.818C60.088,23.909,54.416,22.381,51.069,21.867ZM38.514,15.9q-.016-.025-.033-.049a8.726,8.726,0,1,1,14.2-.1c-.093.123.394-.634-7.133,11.177Zm7.03,15.259c-7.627,0-12.6-2.242-12.6-3.878,0-1.1,2.558-2.908,8.225-3.613l3.562,5.589a.97.97,0,0,0,1.635,0l3.562-5.589c5.668.7,8.226,2.514,8.226,3.613C58.149,28.9,53.216,31.157,45.544,31.157Z" transform="translate(-22 4)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Grupo_50" data-name="Grupo 50" transform="translate(40.696 5.882)">
+      <g id="Grupo_49" data-name="Grupo 49">
+        <path id="Caminho_82" data-name="Caminho 82" d="M185.848,91a4.848,4.848,0,1,0,4.848,4.848A4.854,4.854,0,0,0,185.848,91Zm0,7.757a2.909,2.909,0,1,1,2.909-2.909A2.912,2.912,0,0,1,185.848,98.757Z" transform="translate(-181 -91)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
