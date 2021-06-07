@@ -1,33 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Marker } from 'react-native-maps'
 
 import {
   Container,
-  Map
+  Map,
+  Input,
 } from './styles';
 
 import MapIcon from '../../assets/mapMarker64.png'
+import api from '../../services/api';
 
 export function Home() {
+  const [locations, setLocations] = useState([])
 
-  const markers = [
-    {
-      coordinate : {
-        latitude: -8.0462395,
-        longitude: -34.8954714,  
-      },
-      title: 'posto 1',
-      description: 'muito bom'
-    },
-    {
-      coordinate : {
-        latitude: -6.0,
-        longitude: -38.0,  
-      },
-      title: 'posto 2',
-      description: 'muito bom'
-    },
-  ]
+  useEffect(() => {
+    async function fetchLocations() {
+      const { data }  = await api.get('/locations')
+      setLocations(data)
+    }
+    fetchLocations()
+  }, []);
 
   return (
     <Container>
@@ -39,7 +31,7 @@ export function Home() {
             longitudeDelta: 0.0421,
           }}
         >
-          {markers.map((item, index) => (
+          {locations.map((item, index) => (
             <Marker 
               key={index}
               coordinate={item.coordinate}
@@ -49,6 +41,7 @@ export function Home() {
             />
           ))}
 
+          <Input />
         </Map>
     </Container>
   )

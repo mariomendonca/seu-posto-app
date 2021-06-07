@@ -1,0 +1,44 @@
+{
+  "locations": [
+    {
+      "coordinate" : {
+        "latitude": -8.0462395,
+        "longitude": -34.8954714
+      },
+      "title": "posto 1",
+      "description": "muito bom"
+    },
+    {
+      "coordinate" : {
+        "latitude": -6.0,
+        "longitude": -38.0
+      },
+      "title": "posto 2",
+      "description": "muito bom"
+    },
+    {
+      "coordinate" : {
+        "latitude": -7.8332395,
+        "longitude": -34.3354714
+      },
+      "title": "posto 3",
+      "description": "muito bom"
+    },
+    {
+      "coordinate" : {
+        "latitude": -8.8832395,
+        "longitude": -34.8854714
+      },
+      "title": "posto 4",
+      "description": "muito bom"
+    },
+    {
+      "coordinate" : {
+        "latitude": -6.11,
+        "longitude": -38.11
+      },
+      "title": "posto 5",
+      "description": "muito bom"
+    }
+  ]
+}
