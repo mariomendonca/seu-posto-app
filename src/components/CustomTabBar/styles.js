@@ -1,10 +1,11 @@
 import React from 'react';
+import { RectButton } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 
 import colors from '../../styles/colors'
 
 export const TabArea = styled.View`
-    background: ${colors.dark_gray};
+    background: ${colors.black};
     height: 60px;
     left: 0;
     right: 0;
@@ -29,8 +30,14 @@ export const MainItem = styled.TouchableOpacity`
     height: 70px;
     border: 5px;
     border-radius: 35px;
-    border-color: ${colors.dark_gray};
+    border-color: ${colors.black};
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+`;
+
+export const UserImage = styled.Image`
+    width: 24;
+    height: 24;
+    border-radius: 12px;
 `;
