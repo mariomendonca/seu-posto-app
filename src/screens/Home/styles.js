@@ -32,7 +32,7 @@ export const InputArea = styled.View`
   border-radius: 30px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 60px;
+  margin-top: 50px;
   position: absolute;
   top: 0;
   left: 0;

@@ -57,19 +57,19 @@ export function Home() {
             <SelectRangeLocationArea>
 
               <DistancesButton onPress={() => {setSelectedDistance(5); OpenDistancePicker()}}>
-                <SelectedRangeLocation>5KM</SelectedRangeLocation>
+                <SelectedRangeLocation>5km</SelectedRangeLocation>
               </DistancesButton>
 
               <DistancesButton onPress={() => {setSelectedDistance(10); OpenDistancePicker()}}>
-                <SelectedRangeLocation>10KM</SelectedRangeLocation>
+                <SelectedRangeLocation>10km</SelectedRangeLocation>
               </DistancesButton>
 
               <DistancesButton onPress={() => {setSelectedDistance(15); OpenDistancePicker()}}>
-                <SelectedRangeLocation>15KM</SelectedRangeLocation>
+                <SelectedRangeLocation>15km</SelectedRangeLocation>
               </DistancesButton>
 
               <DistancesButton onPress={() => {setSelectedDistance(20); OpenDistancePicker()}}>
-                <SelectedRangeLocation>20KM</SelectedRangeLocation>
+                <SelectedRangeLocation>20km</SelectedRangeLocation>
               </DistancesButton>
 
             </SelectRangeLocationArea>
@@ -84,7 +84,7 @@ export function Home() {
           />
 
           <RangeLocationInput onPress={() => OpenDistancePicker()}>
-              <SelectedRangeLocation>{selectedDistance}KM</SelectedRangeLocation>
+              <SelectedRangeLocation>{selectedDistance}km</SelectedRangeLocation>
               <Entypo name="chevron-down" size={24} color={colors.red} />
             </RangeLocationInput>
         </InputArea>
