@@ -1,6 +1,7 @@
 {
   "locations": [
     {
+      "id": 1,
       "coordinate" : {
         "latitude": -8.0462395,
         "longitude": -34.8954714
@@ -9,6 +10,7 @@
       "description": "muito bom"
     },
     {
+      "id": 2,
       "coordinate" : {
         "latitude": -6.0,
         "longitude": -38.0
@@ -17,6 +19,7 @@
       "description": "muito bom"
     },
     {
+      "id": 3,
       "coordinate" : {
         "latitude": -7.8332395,
         "longitude": -34.3354714
@@ -25,6 +28,7 @@
       "description": "muito bom"
     },
     {
+      "id": 4,
       "coordinate" : {
         "latitude": -8.8832395,
         "longitude": -34.8854714
@@ -33,6 +37,7 @@
       "description": "muito bom"
     },
     {
+      "id": 5,
       "coordinate" : {
         "latitude": -6.11,
         "longitude": -38.11

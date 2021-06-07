@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { Marker } from 'react-native-maps'
+import { Marker, Callout } from 'react-native-maps'
+import { Feather } from '@expo/vector-icons' 
+import { useNavigation } from '@react-navigation/native'
 
 import {
   Container,
   Map,
   Input,
+  LocationText,
+  LocationContainer,
+  LocationButton
 } from './styles';
 
 import MapIcon from '../../assets/mapMarker64.png'
@@ -13,6 +18,8 @@ import api from '../../services/api';
 export function Home() {
   const [locations, setLocations] = useState([])
 
+  const { navigate } = useNavigation()
+
   useEffect(() => {
     async function fetchLocations() {
       const { data }  = await api.get('/locations')
@@ -20,6 +27,10 @@ export function Home() {
     }
     fetchLocations()
   }, []);
+
+  function NavigateToLocation(id) {
+    navigate('location')
+  }
 
   return (
     <Container>
@@ -35,13 +46,22 @@ export function Home() {
             <Marker 
               key={index}
               coordinate={item.coordinate}
-              title={item.title}
-              description={item.description}
+              // title={item.title}
+              // description={item.description}
               image={MapIcon}
-            />
+            >
+              <Callout>
+                <LocationContainer>
+                  <LocationText>
+                    Ir para o {item.title} 
+                  </LocationText>
+                  <LocationButton onPress={() => NavigateToLocation()}>
+                    <Feather name='arrow-right' size={25}/>
+                  </LocationButton>
+                </LocationContainer>
+              </Callout>
+            </Marker>
           ))}
-
-          <Input />
         </Map>
     </Container>
   )

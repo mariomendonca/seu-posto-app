@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import MainTab from './MainTab'
 import { Home } from './screens/Home'
+import { Location } from './screens/Location';
 
 export function Routes() {
   const { Screen, Navigator } = createStackNavigator()
@@ -14,6 +15,7 @@ export function Routes() {
         headerShown: false,
       }}>
         <Screen name='MainTab' component={MainTab}/>
+        <Screen name='location' component={Location}/>
       </Navigator>
     </NavigationContainer>
   )
