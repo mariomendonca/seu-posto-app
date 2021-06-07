@@ -50,7 +50,7 @@ export function Home() {
               // description={item.description}
               image={MapIcon}
             >
-              <Callout>
+              <Callout onPress={() => NavigateToLocation()}>
                 <LocationContainer>
                   <LocationText>
                     Ir para o {item.title} 

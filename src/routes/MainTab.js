@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import CustomTabBar from '../src/components/CustomTabBar';
+import CustomTabBar from '../components/CustomTabBar';
 
-import { Home } from '../src/screens/Home';
-import Filter from '../src/screens/Filter';
+import { Home } from '../screens/Home';
+import Filter from '../screens/Filter';
 
 const Tab = createBottomTabNavigator();
 
